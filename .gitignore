@@ -11,9 +11,12 @@ crash.log
 *~
 
 # Images
-# *.png
-# *.jpg
-# *.JPG
+*.png
+*.PNG
+*.gif
+*.GIF
+*.jpg
+*.JPG
 
 # Hidden files/folders
 .*
