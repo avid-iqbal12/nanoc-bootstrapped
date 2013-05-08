@@ -1,0 +1,22 @@
+# Ignore Nanoc output files.
+/output
+/tmp
+crash.log
+
+# Emacs trash
+\#*
+.\#*
+
+#Notepad backup files
+*~
+
+# Images
+# *.png
+# *.jpg
+# *.JPG
+
+# Hidden files/folders
+.*
+
+# This file
+!/.gitignore
