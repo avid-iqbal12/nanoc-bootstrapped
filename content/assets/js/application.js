@@ -6,6 +6,10 @@
 //---------------------------------------------
 //= require jquery.js
 //= require holder.js
+//= require elastislide/tmpl.min.js
+//= require elastislide/easing.1.3.js
+//= require elastislide/elastislide.js
+//= require elastislide/gallery.js
 //
 //---------------------------------------------
 //  Bootstrap components:
@@ -28,5 +32,4 @@
 //  Additional components:
 //---------------------------------------------
 //= require custom.js
-
 
