@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Carousel Template &middot; Nanoc/Bootstrap</title>
+    <title>Szach &middot; Mat</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -25,24 +25,24 @@
 
   <body>
 
-      <%= render "partials/navbar" %>
+      <%= render "partials/navbar_classic" %>
 
-      <%= render "partials/carousel" %>
+      <section id="carousel" style="margin-top: -50px; padding-top: 50px">
+        <%= render "partials/carousel" %>
+      </section>
 
-      <!-- Marketing messaging and featurettes
-           ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
-      <div class="container marketing">
+      <section id="services" style="margin-top: -110px; padding-top: 110px">
+        <div class="container marketing">
+          <%= render "partials/marketing" %>
+          <%#= render "partials/featurettes" %>
+        </div><!-- /.container -->
+      </section>
 
-        <%= render "partials/marketing" %>
+      <section id="gallery" style="margin-top: -50px; padding-top: 50px">
+        <%= render "partials/gallery" %>
+      </section>
 
-        <%#= render "partials/featurettes" %>
-
-      </div><!-- /.container -->
-
-      <%= render "partials/gallery" %>
-
-    <%#= render "partials/footer" %>
+      <%= render "partials/footer" %>
 
     <!-- Le javascript
          ================================================== -->
@@ -50,3 +50,4 @@
     <script src="../assets/js/application.js"></script>
   </body>
 </html>
+
