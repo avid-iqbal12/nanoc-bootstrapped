@@ -10,6 +10,22 @@ compile 'assets/js/application/' do
   # filter :uglify_js
 end
 
+compile 'gallery/' do
+  #
+end
+
+compile 'gallery-flickr/' do
+  #
+end
+
+compile 'assets/gallery-supersized/*' do
+  #
+end
+
+compile 'assets/gallery-supersized-flickr/*' do
+  #
+end
+
 compile '*' do
   if not item.binary?
     filter :erb
@@ -18,6 +34,13 @@ compile '*' do
   end
 end
 
+route 'assets/gallery-supersized/*' do
+  item.identifier.chop + '.' + item[:extension]
+end
+
+route 'assets/gallery-supersized-flickr/*' do
+  item.identifier.chop + '.' + item[:extension]
+end
 
 route %r{^/(assets/.*|img|js|less)/$} do
   source_file = File.basename(item.identifier)
