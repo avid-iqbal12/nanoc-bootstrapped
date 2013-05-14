@@ -5,4 +5,3 @@
         $('#myCarousel').carousel()
     })
 }(window.jQuery)
-

@@ -15,7 +15,7 @@ compile 'gallery/' do
 end
 
 compile 'gallery-flickr/' do
-  #
+  filter :erb
 end
 
 compile 'assets/gallery-supersized/*' do
@@ -42,7 +42,7 @@ route 'assets/gallery-supersized-flickr/*' do
   item.identifier.chop + '.' + item[:extension]
 end
 
-route %r{^/(assets/.*|img|js|less)/$} do
+route %r{^/assets/(.*|img|js|less)/$} do
   source_file = File.basename(item.identifier)
   if source_file == "application"
     (item.identifier.chop + '.' + item[:extension]).gsub("less", "css")

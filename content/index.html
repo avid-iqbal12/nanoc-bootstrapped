@@ -1,3 +1,24 @@
 ---
 title: Kafelkowanie, gładzie, malowanie
 ---
+
+<div id="wrap">
+  <%= render "partials/navbar_classic" %>
+
+  <section id="carousel">
+    <%= render "partials/carousel" %>
+  </section>
+
+  <section id="services">
+    <div class="container marketing">
+      <%= render "partials/marketing" %>
+      <%#= render "partials/featurettes" %>
+    </div><!-- /.container -->
+  </section>
+
+  <!-- <section id="gallery"> -->
+  <%#= render "partials/gallery" %>
+  <!-- </section> -->
+  <div id="push"></div>
+</div>
+<%= render "partials/footer" %>
