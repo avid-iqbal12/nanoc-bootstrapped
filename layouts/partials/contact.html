@@ -1,0 +1,31 @@
+<!-- contact form -->
+<div class="container">
+  <div class="contact-form text-center">
+
+    <img style="display: block; margin: 0 auto 0 auto"
+         src="assets/img/phone-icon.png"
+         width="20%" height="20%">
+    <h2 class="featurette-heading">(+48) 666 777 888</h2>
+    <h2 class="featurette-heading muted">Nie odbieram?</h2>
+    <p class="lead">
+      Zostaw numer telefonu / napisz lub jedno i drugie.<br>
+      Odezwę się jak tylko znajdę chwilę.
+    </p>
+    <form id="contactForm">
+      <fieldset class="text-center">
+        <label for="telephone">Twój numer telefonu</label>
+        <input name="telephone" id="telephone" type="text" class="span4 text-center" placeholder="(+49) 123-456-789">
+        <label for="email">Twój adres e-mail</label>
+        <input name="email" id="email" type="text" class="span4 text-center" placeholder="szatan@jezus.pl">
+        <label for="message">Wiadomość</label>
+        <textarea name="message" id="message" rows="7" class="span6" placeholder="Szanowny Panie Majster..."></textarea>
+        <br><br>
+        <button id="submitButton" type="submit" class="btn btn-success input-large">Wyślij</button>
+    </form>
+
+  </div>
+</div>
+<div id="responseTextWrapper">
+  <span id="responseText"></span>
+  <small id="responseInfo">(Kliknij aby schować)</small>
+</div>

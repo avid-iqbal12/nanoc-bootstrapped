@@ -7,7 +7,7 @@
 //= require jquery.js
 //= require holder.js
 //= require smoothscroll.js
-//---------------------------------------------
+//--------------------------------------------
 //  Bootstrap components:
 //---------------------------------------------
 //= require bootstrap/bootstrap-transition.js

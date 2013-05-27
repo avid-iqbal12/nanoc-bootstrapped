@@ -27,7 +27,7 @@
     <!-- <link rel="shortcut icon" href=""> -->
   </head>
 
-  <body id="page-top">
+  <body id="page-top" style="display: none">
 
     <!-- <a id="back-to-top" class="smoothScroll" href="#carousel"></a> -->
     <%= yield %>
@@ -44,10 +44,12 @@
     <% else %>
       <script src="assets/js/application.js"></script>
     <% end %>
+
+    <!-- Body fader js -->
     <script>
       $(document).ready(function() {
       $('body').css('display', 'none');
-      $('body').fadeIn(1000);
+      $('body').fadeIn(800);
 
       $('.fader').click(function() {
       event.preventDefault();

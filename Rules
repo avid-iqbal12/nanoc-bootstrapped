@@ -26,6 +26,10 @@ compile 'assets/gallery-supersized-flickr/*' do
   #
 end
 
+compile '/send_form_email/' do
+  #
+end
+
 compile '*' do
   if not item.binary?
     filter :erb
@@ -56,7 +60,11 @@ route '/' do
 end
 
 route '*' do
-  item.identifier.chop + '.html'
+  if item[:extension] == "php"
+    item.identifier.chop + '.php'
+  else
+    item.identifier.chop + '.html'
+  end
 end
 
 layout '*', :erb

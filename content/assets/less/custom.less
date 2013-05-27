@@ -162,8 +162,6 @@ body {
     letter-spacing: -1px;
 }
 
-
-
 /* RESPONSIVE CSS
    -------------------------------------------------- */
 
@@ -261,6 +259,7 @@ body {
 body {
     // margin-top: 50px;
 }
+
 .carousel {
     margin-top: 50px;
     // padding-top: 50px;
@@ -278,6 +277,25 @@ body {
         line-height: 1.25;
     }
 }
+
+.featurette {
+    margin-top: -50px;
+}
+.featurette .span4 {
+    margin-top: 15px;
+    margin-left: 2%;
+}
+.featurette {
+    .thumbnail {
+        width: 46%;
+        height: auto;
+        padding: 1.5%;
+        img {
+            max-width: 98.5%;
+        }
+    }
+}
+
 @media (max-width: 979px) {
     .carousel {
         margin-top: 0;
@@ -285,12 +303,19 @@ body {
     .carousel-caption {
         padding: 0 20px;
     }
+    .featurette {
+        margin-top: -20px;
+        padding-top: 20px;
+    }
 }
 @media (max-width: 767px) {
     .carousel-caption {
         width: 65%;
         padding: 0 70px;
         margin-top: 50px;
+    }
+    .featurette .span4 {
+        margin-left: 0;
     }
 }
 
@@ -354,9 +379,11 @@ section {
     margin: -50px 0 0 0; // Fixed Navbar padding fix
     padding: 50px 0 0 0;
 }
-section#services {
-    margin: -110px 0 0 0;
-    padding: 110px 0 0 0;
+section {
+    &#services, &#contact {
+        margin: -100px 0 0 0;
+        padding: 100px 0 0 0;
+    }
 }
 @media (max-width: 979px) {
     section {
@@ -366,6 +393,10 @@ section#services {
     section#services {
         margin: -60px 0 0 0;
         padding: 60px 0 0 0;
+    }
+    section#contact {
+        margin: -15px 0 0 0;
+        padding: 15px 0 0 0;
     }
 }
 /* BACK-TO-TOP BUTTON
@@ -379,4 +410,32 @@ section#services {
     bottom: 7px;
     right: 7px;
     z-index: 3000;
+}
+
+/* FORM RESPONSE ALERT BAR
+   -------------------------------------------------- */
+
+#responseTextWrapper {
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    margin: auto;
+    display: none;
+    text-align: center;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+    z-index: 9999;
+    &:hover { cursor: pointer }
+}
+
+#responseText { font-weight: bold }
+
+@media (max-width: 979px) {
+    #responseTextWrapper { top: 0px }
+}
+
+@media (max-width: 767px) {
+    #responseTextWrapper {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
 }
